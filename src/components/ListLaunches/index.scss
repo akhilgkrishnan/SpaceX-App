@@ -1,0 +1,39 @@
+td {
+  display: table-cell;
+  border-top: none;
+  align-items: center;
+  height: 53px;
+  font-weight: normal;
+  color: #1f2937;
+}
+.mission-status {
+  background: #def7ec;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0;
+  width: fit-content;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.failed {
+  color: #981b1c;
+  background: #fde2e1;
+}
+.success {
+  color: #03543f;
+  background: #def7ec;
+}
+.upcoming {
+  color: #92400f;
+  background: #fef3c7;
+}
