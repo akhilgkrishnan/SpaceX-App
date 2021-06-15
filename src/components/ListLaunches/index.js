@@ -2,7 +2,6 @@ import React, { Fragment, useState } from "react";
 import "./index.scss";
 import LaunchModal from "../LaunchModal";
 import Loader from "../Loader";
-import { useEffect } from "react";
 function ListLaunches(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLaunch, setSelectedLaunch] = useState({});
@@ -11,10 +10,7 @@ function ListLaunches(props) {
     setSelectedLaunch(modalData);
     setIsOpen(true);
   };
-
-  useEffect(() => {
-    console.log("loading"+props.loading);
-  })
+  
   const hideModal = () => setIsOpen(false);
   return (
     <>

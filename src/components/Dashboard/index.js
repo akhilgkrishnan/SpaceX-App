@@ -29,15 +29,17 @@ function Dashboard() {
 
   useEffect(() => {
     setCurrentPage(1);
-    setLoading(true)
-    setTimeout(() => {
-      if (filteredLaunches.length > 0) {
-        setPageCount(Math.ceil(filteredLaunches.length / launchesPerPage))
-        setCurrentLaunches(filteredLaunches)
-      }
-      setLoading(false)
-    }, 300) // For showing the spinner
-  }, [filteredLaunches]);
+    if (launches.length > 0) {
+      setLoading(true)
+      setTimeout(() => {
+        if (filteredLaunches.length > 0) {
+          setPageCount(Math.ceil(filteredLaunches.length / launchesPerPage))
+          setCurrentLaunches(filteredLaunches)
+        }
+        setLoading(false)
+      }, 300) // For showing the spinner
+    }
+  }, [filteredLaunches, launches]);
 
   useEffect(() => {
     if (launches.length > 0) {

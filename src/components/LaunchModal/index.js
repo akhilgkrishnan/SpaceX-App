@@ -56,7 +56,7 @@ function LaunchModal({ showModal, closeModal, data }) {
                 <button type="button" className="btn-close close-button" onClick={closeModal} data-bs-dismiss="modal" aria-label="Close"></button>
               </Modal.Header>
               <p>
-                {modalData.details} {modalData.details != null ? (<a href={modalData.links.wikipedia} style={{ 'text-decoration': "none" }}>Wikipedia</a>) : null}
+                {modalData.details} {modalData.details != null ? (<a href={modalData.links.wikipedia} style={{ textDecoration: "none" }}>Wikipedia</a>) : null}
               </p>
               <Table className="modal-table">
                 <tbody>
