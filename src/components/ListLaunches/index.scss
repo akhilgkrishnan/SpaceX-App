@@ -1,0 +1,60 @@
+td {
+  border-top: none;
+  align-items: center;
+  align-content: center;
+  font-weight: normal;
+  vertical-align: middle;
+  color: #1f2937;
+}
+.mission-status {
+  background: #def7ec;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0;
+  width: fit-content;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.failed {
+    color: #981b1c;
+    background: #fde2e1;
+  }
+.success {
+  color: #03543f;
+  background: #def7ec;
+}
+.upcoming {
+  color: #92400f;
+  background: #fef3c7;
+}
+.no-data{
+  display: flex;
+  text-align: end;
+  height: 14px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8750em !important;
+  line-height: 14px;
+}
+.tr-center{
+  position: relative;
+}
+.td-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  pointer-events: none;
+}
+
