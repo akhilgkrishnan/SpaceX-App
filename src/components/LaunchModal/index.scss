@@ -1,0 +1,89 @@
+.custom-modal {
+  width: 544px;
+}
+
+.modal-label {
+  display: flex;
+  .launch-image {
+    width: 72px;
+    height: 72px;
+  }
+  .modal-names {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    .links {
+      a {
+        padding-right: 0.75em;
+      }
+    }
+    .first-line {
+      .mission-name,
+      .rocket-name {
+        font-style: normal;
+        letter-spacing: 0;
+      }
+      .mission-name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        padding-right: 1em;
+      }
+    }
+    .first-line,
+    .modal-head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.modal-content {
+  position: fixed;
+  background: #fff;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  padding: 32px;
+  font-size: 14px;
+  width: 544px;
+}
+
+.modal-main p,
+.modal-names {
+  text-align: left;
+}
+p {
+  padding-left: 0.5em;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.modal-header {
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom-width: 0px;
+  align-items: flex-start;
+  .btn-close {
+    margin-top: -20px !important;
+    margin-right: -10px !important;
+  }
+}
+
+.modal-table {
+  tbody {
+    tr {
+      border-bottom: 1px solid #e4e4e7;
+      line-height: 36px;
+      td {
+        padding: 5px 8px;
+      }
+    }
+    tr:last-child {
+      border-bottom: 0px;
+    }
+  }
+}
